@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header part -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://thumbs.dreamstime.com/b/letter-r-logo-isolated-black-background-simple-vector-164101784.jpg"
+                    class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Developer</p>
+                <h1>Hello, i'am <span>RAJA</span><br> NAYAK From India</h1>
+            </div>
+        </div>
+    </div>
+                                        <!-- about me -->
+    <div id="about">
+        <div class="containers">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://i.pinimg.com/564x/79/a3/3a/79a33a44041e9197b3a3e3e75961e256.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos pariatur ducimus omnis molestias
+                        est libero nesciunt vel. Ab maxime neque, repudiandae facilis ratione cumque blanditiis
+                        voluptatibus nobis, dolorum, deserunt aliquid.
+                        Possimus aliquam nemo veniam praesentium explicabo ullam iste magni harum quaerat ut officiis
+                        temporibus voluptates esse delectus rerum perferendis assumenda tenetur vero sint nisi
+                        voluptatum et, libero illum? Quia, atque!
+                        Suscipit nemo odio deserunt debitis doloremque accusamus est minus illo rerum, deleniti velit,
+                        asperiores repellendus! Perspiciatis labore debitis commodi laboriosam cumque beatae alias,
+                        similique nesciunt facere esse eius aliquam optio?
+                        Amet perferendis ab exercitationem quia velit tenetur, neque magni, assumenda officiis fugiat
+                        fugit temporibus beatae praesentium quibusdam eius ipsum a necessitatibus minus hic, atque unde!
+                        Nisi deserunt ea dolor dolore?</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skill</p>
+                        <p class="tab-links" onclick="opentab('exprience')">Exprience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>Frontend :</span><br>HTML/CSS , Javascript</li>
+                            <li><span>Backend :</span><br>Nodejs , MongoDb</li>
+                            <li>Git And Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="exprience">
+                        <ul>
+                            <li><span>Netflix clone</span><br> using HTML/CSS , Javascript</li>
+                            <li><span>Database management </span><br>using javascript</li>
+                            <li><span>Calculator</span><br>using javascript , HTML/CSS</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>School (2021 - 2022)</span><br>Science college konkarada</li>
+                            <li><span>University (2023 - 2027)</span><br>Starex university</li>
+                            <li><span>B.tech (CS)</span><br>Functionup School Of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                                        <!-- services -->
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="service-list">
+            <div>
+                <h2> web design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, debitis cumque quo maiores eos laudantium soluta quidem sit ea adipisci, voluptate assumenda! Non id nisi nihil amet mollitia quibusdam laboriosam?</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>app design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, debitis cumque quo maiores eos laudantium soluta quidem sit ea adipisci, voluptate assumenda! Non id nisi nihil amet mollitia quibusdam laboriosam?</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, debitis cumque quo maiores eos laudantium soluta quidem sit ea adipisci, voluptate assumenda! Non id nisi nihil amet mollitia quibusdam laboriosam?</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    let tabLink = document.getElementsByClassName("tab-links");
+    let tabContent = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(link of tabLink){
+            link.classList.remove("active-link");
+        }
+        for(content of tabContent){
+            content.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+
+</html>
